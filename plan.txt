@@ -1,0 +1,20 @@
+-Authentication
+Buyers
+Seller
+-Buyers
+    - See items they can buy and price
+    - See how much money they have
+    - Purchase items
+    - //Transfer money
+-Sellers
+    - Add money onto accounts of Buyers
+    - Add items onto shop
+    - Have same things as Buyers
+    - Delete items
+-Catalog
+    - Show all items with their price, name and mabye picture
+-//Item page
+
+
+Installs
+npm install @mui/material @emotion/react @emotion/styled
