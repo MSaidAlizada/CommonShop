@@ -2,15 +2,17 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Components/Home/Home.js';
 import Navbar from './Components/Navbar/Navbar.js';
 import Login from './Components/Login/Login.js';
+import Dashboard from "./Components/Dashboard/Dashboard.js";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
+          <Route path="dashboard" element={<Dashboard/>} />
         </Routes>
       </BrowserRouter>
     </div>
