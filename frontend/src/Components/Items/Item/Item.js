@@ -19,7 +19,6 @@ export default function Item({name, price, imglink, stock}){
                 sx={{ height: 140, width: 140, margin:"auto" }}
                 image={imglink}
                 title="indomie"
-                justifyContent="center"
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
