@@ -16,7 +16,7 @@ export default function Navbar({ loggedIn }) {
 
   return (
     <div className='Navbar'>
-      {0 ?(<BrowserView>
+      <BrowserView>
         <Box sx={{ flexGrow: 1, marginBottom: 2 }}>
           <AppBar position="static">
             <Toolbar>
@@ -29,8 +29,8 @@ export default function Navbar({ loggedIn }) {
             </Toolbar>
           </AppBar>
         </Box>
-      </BrowserView>):
-      (<BrowserView>
+      </BrowserView>
+      <MobileView>
         <Box sx={{ flexGrow: 1, marginBottom: 2 }}>
           <AppBar position="static">
             <Toolbar>
@@ -63,7 +63,7 @@ export default function Navbar({ loggedIn }) {
             </Toolbar>
           </AppBar>
         </Box>
-      </BrowserView>)}
+      </MobileView>
     </div>
   );
 }
