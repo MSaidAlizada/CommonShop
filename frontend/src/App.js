@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from './Components/Home/Home.js';
 import Navbar from './Components/Navbar/Navbar.js';
 import Login from './Components/Login/Login.js';
@@ -7,8 +7,8 @@ import Dashboard from "./Components/Dashboard/Dashboard.js";
 
 function App() {
   const [user, SetUser] = useState({
-    loggedIn: true,
-    seller: false,
+    loggedIn: false,
+    seller: true,
     balance: 100,
     
   })
@@ -19,7 +19,8 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
-          <Route path="dashboard" element={<Dashboard/>} />
+          {user.seller ? (<Route path="dashboard" element={<Dashboard />} />) : <></>}
+          <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
       </BrowserRouter>
     </div>
