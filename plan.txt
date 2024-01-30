@@ -23,3 +23,11 @@ TO DO
 -Navbar finish DONE
 -Dashboard items
 -Transfer money
+
+
+Functions to Add
+-Get items
+-Buy item
+-Create item
+-Change item stock
+-Delete item
